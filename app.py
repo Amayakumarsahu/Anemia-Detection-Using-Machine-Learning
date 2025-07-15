@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the trained model
-model = pickle.load(open('c:\\Users\\Amaya\\OneDrive\\Desktop\\Anemia detection project\\model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
