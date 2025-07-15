@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Anemia - Disease Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f4ff;
+        }
+
+        .hero-bg {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            min-height: 350px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(44, 44, 44, 0.55);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+            position: relative;
+            z-index: 2;
+            margin-top: 60px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #6c63ff;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #6c63ff;
+            padding-bottom: 0.5rem;
+        }
+
+        .section p {
+            line-height: 1.6;
+            color: #34495e;
+            margin-bottom: 1rem;
+        }
+
+        .parameters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .parameter-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #6c63ff;
+        }
+
+        .parameter-card h3 {
+            color: #6c63ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #6c63ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #6c63ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-bg">
+        <div class="container">
+            <div class="header">
+                <h1>Understanding Anemia</h1>
+                <p>A comprehensive guide to anemia, its symptoms, and diagnostic parameters</p>
+            </div>
+
+            <div class="section">
+                <h2>About Anemia</h2>
+                <p>Anemia is a common health condition that happens when your body doesn't have enough healthy red blood cells to carry oxygen to your organs and tissues. 
+                    This can make you feel tired, weak, or dizzy. It often occurs due to low iron levels, poor diet, or blood loss. Anemia is especially common in women and children. 
+                    The good news is that anemia can be detected early and treated. Our project uses machine learning to help predict anemia more accurately and quickly, making it easier for people to get the help they need in time.</p>
+            </div>
+
+            <div class="section">
+                <h2>Common Symptoms</h2>
+                <p>The most common symptoms of anemia include:</p>
+                <ul>
+                    <li>Fatigue and weakness</li>
+                    <li>Shortness of breath</li>
+                    <li>Dizziness or lightheadedness</li>
+                    <li>Chest pain</li>
+                    <li>Cold hands and feet</li>
+                    <li>Irregular heartbeats</li>
+                    <li>Pale or yellowish skin</li>
+                    <li>Headaches</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Diagnostic Parameters</h2>
+                <div class="parameters">
+                    <div class="parameter-card">
+                        <h3>Hemoglobin (Hb)</h3>
+                        <p>Hemoglobin is a protein in red blood cells that carries oxygen. Normal ranges:</p>
+                        <ul>
+                            <li>Men: 13.2-16.6 g/dL</li>
+                            <li>Women: 11.6-15 g/dL</li>
+                        </ul>
+                    </div>
+
+                    <div class="parameter-card">
+                        <h3>Mean Corpuscular Hemoglobin (MCH)</h3>
+                        <p>MCH refers to the average quantity of hemoglobin present in a single red blood cell. The normal range is between 27.5 and 33.2 picograms/cell.</p>
+                    </div>
+
+                    <div class="parameter-card">
+                        <h3>Mean Corpuscular Hemoglobin Concentration (MCHC)</h3>
+                        <p>MCHC measures the average concentration of hemoglobin in red blood cells. The normal range is 31.5-35.5g/dL.</p>
+                    </div>
+
+                    <div class="parameter-card">
+                        <h3>Mean Corpuscular Volume (MCV)</h3>
+                        <p>MCV indicates the average size of red blood cells. The normal range for MCV is between 80 to 100 femtoliters.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="/">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
