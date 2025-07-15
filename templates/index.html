@@ -24,6 +24,7 @@
             top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(44, 44, 44, 0.55);
             backdrop-filter: blur(2px);
+            z-index: 1;
         }
         .navbar {
             display: flex;
@@ -164,6 +165,7 @@
             <span class="logo">Anemia</span>
             <ul>
                 <li class="active"><a href="#">Home</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="#form">Predict</a></li>
             </ul>
             <button class="check-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'});">check</button>
